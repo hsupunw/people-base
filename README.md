@@ -35,3 +35,4 @@ You can build the project with following steps
 - You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
 
 ## Alternative implementation with spring-data-rest
+- An alternative implementation with spring-data-rest (fully working with above angular front end) can be found from https://github.com/hsupunw/people-base-data-rest
