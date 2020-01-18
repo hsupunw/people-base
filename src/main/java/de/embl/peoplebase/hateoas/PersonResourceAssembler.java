@@ -16,6 +16,6 @@ public class PersonResourceAssembler implements ResourceAssembler<PeopleModulePe
         return new Resource<>(
                 peopleModulePerson,
                 linkTo(methodOn(PersonController.class).person(peopleModulePerson.getId())).withSelfRel(),
-                linkTo(methodOn(PersonController.class).allPersons()).withRel("employees"));
+                linkTo(methodOn(PersonController.class).allPersons()).withRel("persons"));
     }
 }

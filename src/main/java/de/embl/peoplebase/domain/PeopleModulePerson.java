@@ -5,11 +5,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import de.embl.peoplebase.constants.ExampleValues;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.hateoas.core.Relation;
 
 import java.util.Collection;
 
 @Data
 @JsonPropertyOrder({"id", "first_name", "last_name", "age", "favourite_colour", "hobby"})
+@Relation(collectionRelation = "persons")
 public class PeopleModulePerson {
     @ApiModelProperty(hidden = true)
     private String id;

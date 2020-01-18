@@ -31,10 +31,10 @@ public class PersonController {
 
     @GetMapping
     public Resources<Resource<PeopleModulePerson>> allPersons() {
-        List<Resource<PeopleModulePerson>> employees = personAgent.getAllPersons().stream()
+        List<Resource<PeopleModulePerson>> persons = personAgent.getAllPersons().stream()
                 .map(resourceAssembler::toResource)
                 .collect(Collectors.toList());
-        return listResourceAssembler.toResource(employees);
+        return listResourceAssembler.toResource(persons);
     }
 
     @GetMapping("/{id}")
