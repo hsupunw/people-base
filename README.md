@@ -9,7 +9,7 @@ You can build the project with following steps
 - Navigate to project root. */people-base/
 - Execute a maven build by 'mvn clean package' or 'mvn clean install'
 - Find the executable .jar at */people-base/target/
-- Alternately you can download the executable .jar file from <link>
+- Alternately you can download the executable .jar file from *******
 
 ## Run
 - With the executable .jar made with the previous step, you can run the application by 'java -jar people-base-0.0.1-SNAPSHOT.jar' command.
@@ -30,3 +30,8 @@ You can build the project with following steps
     
 ## Front End client
 - A front end client using angular 7 is developed for ease of use. Please find it from https://github.com/hsupunw/people-client
+
+## Postman Collection
+- You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
+
+## Alternative implementation with spring-data-rest
