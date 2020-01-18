@@ -32,5 +32,6 @@ You can build the project with following steps
 - A front end client using angular 7 is developed for ease of use. Please find it from https://github.com/hsupunw/people-client
 
 ## Postman Collection
+- You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
 
 ## Alternative implementation with spring-data-rest
