@@ -4,3 +4,5 @@ This is a sample sapring-boot based REST application which shows main crud opera
 ## build
 You can build the project with following steps
 - Navigate to project root. */people-base
+- Execute a maven build by 'mvn clean package' or 'mvn clean install'
+- Find the executable .jar at */people-base/target 
