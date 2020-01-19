@@ -3,6 +3,7 @@
 - More over it is protected by basic authentication supported by spring-security.
 - All endpoints are documented with swagger 2.
 - It additonally, provides related hateos navigation links for each endpoint response.
+- Source code is covered by unit and integration tests powered with spring boot tests.
 
 ## Build
 You can build the project with following steps
