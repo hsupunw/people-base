@@ -26,7 +26,7 @@ mvn clean install
 ## Run
 - With the executable .jar made with the previous step, you can run the application by 
 ```shell
-java -jar people-base-data-rest-0.0.1-SNAPSHOT.jar
+java -jar people-base-0.0.1-SNAPSHOT.jar
 ```
 command.
 - By Default it uses port 8080.
