@@ -8,14 +8,25 @@
 ## Build
 You can build the project with following steps
 - Navigate to project root. */people-base/
-- Execute a maven build by 'mvn clean package' or 'mvn clean install'
+- Execute a maven build by 
+```shell
+mvn clean package
+```
+or 
+```shell
+mvn clean install
+```
 - Find the executable .jar at */people-base/target/
 
 ## Test without installing
 - Alternately you can download the executable .jar file directly from *******
 
 ## Run
-- With the executable .jar made with the previous step, you can run the application by 'java -jar people-base-0.0.1-SNAPSHOT.jar' command.
+- With the executable .jar made with the previous step, you can run the application by 
+```shell
+java -jar people-base-data-rest-0.0.1-SNAPSHOT.jar
+```
+command.
 - By Default it uses port 8080.
 
 ## Api Documentation
