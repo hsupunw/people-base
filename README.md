@@ -28,16 +28,14 @@ You can build the project with following steps
     - user name: sa
     - password:
 
-## Curl Collection
-- You can can find sample basic curl commands to test this application below. 
+## Test with command line client (Curl)
+- You can can find sample basic curl commands collection to test this application below. 
 
 ## Postman Collection
 - You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
     
 ## Front End client
 - A front end client using angular 7 is developed for ease of use. Please find it from https://github.com/hsupunw/people-client
-
-## Command-line Collection
 
 ## Alternative Implementation with spring-data-rest
 - An alternative implementation with spring-data-rest (fully working with above angular front end) can be found from https://github.com/hsupunw/people-base-data-rest
