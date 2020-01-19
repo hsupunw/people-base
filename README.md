@@ -27,12 +27,15 @@ You can build the project with following steps
 - This application uses an in memory h2 db. To navigate to h2 console, go http://localhost:8080/h2-console
     - user name: sa
     - password:
-    
-## Front End client
-- A front end client using angular 7 is developed for ease of use. Please find it from https://github.com/hsupunw/people-client
+
+## Curl Collection
+- You can can find sample basic curl commands to test this application below. 
 
 ## Postman Collection
 - You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
+    
+## Front End client
+- A front end client using angular 7 is developed for ease of use. Please find it from https://github.com/hsupunw/people-client
 
 ## Command-line Collection
 
