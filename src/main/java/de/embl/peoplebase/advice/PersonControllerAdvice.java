@@ -1,5 +1,6 @@
 package de.embl.peoplebase.advice;
 
+import de.embl.peoplebase.exception.MandatoryFieldException;
 import de.embl.peoplebase.exception.PersonNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -13,6 +14,13 @@ public class PersonControllerAdvice {
     @ExceptionHandler(PersonNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public Error handlePersonNotFound(PersonNotFoundException ex) {
+        return new Error(ex.getMessage());
+    }
+
+    @ResponseBody
+    @ExceptionHandler(MandatoryFieldException.class)
+    @ResponseStatus(HttpStatus.NOT_ACCEPTABLE)
+    public Error handleMandatoryField(MandatoryFieldException ex) {
         return new Error(ex.getMessage());
     }
 }
