@@ -38,6 +38,18 @@ You can build the project with following steps
 ```shell
  curl --user admin:admin localhost:8080/persons/123
 ```
+- Create
+```shell
+ curl --user admin:admin -X POST localhost:8080/persons -H 'Content-type:application/json' -d '{
+  "age": 54,
+  "favourite_colour": "blue",
+  "first_name": "Sarah",
+  "hobby": [
+    "chess"
+  ],
+  "last_name": "Robinson"
+}'
+```
 
 ## Postman Collection
 - You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
