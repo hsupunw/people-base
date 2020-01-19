@@ -50,6 +50,22 @@ You can build the project with following steps
   "last_name": "Robinson"
 }'
 ```
+- Update
+```shell
+ curl --user admin:admin -X PUT localhost:8080/persons/123 -H 'Content-type:application/json' -d '{
+  "first_name": "John",
+  "last_name": "Keynes",
+  "age": 29,
+  "favourite_colour": "black",
+  "hobby": [
+    "cricket"
+   ]
+}'
+```
+- Delete
+```shell
+ curl --user admin:admin -X DELETE localhost:8080/persons/123
+```
 
 ## Postman Collection
 - You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
