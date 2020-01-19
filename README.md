@@ -21,7 +21,7 @@ mvn clean install
 - Find the executable .jar at */people-base/target/
 
 ## Test without installing
-- Alternately you can download the executable .jar file directly from *******
+- Alternately you can download the executable .jar file directly from https://drive.google.com/open?id=15BoG9aapUEuE8JaZGvUDZyCeqRdIOA-v
 
 ## Run
 - With the executable .jar made with the previous step, you can run the application by 
