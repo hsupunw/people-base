@@ -28,8 +28,16 @@ You can build the project with following steps
     - user name: sa
     - password:
 
-## Test with command line client (Curl)
+## Test with command line client (curl)
 - You can can find sample basic curl commands collection to test this application below. 
+- Get all
+```shell
+ curl --user admin:admin localhost:8080/persons
+```
+- Get one
+```shell
+ curl --user admin:admin localhost:8080/persons/123
+```
 
 ## Postman Collection
 - You can import the postman collection created for testing purpose from https://www.getpostman.com/collections/3582526d271489102986
