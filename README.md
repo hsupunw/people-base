@@ -9,7 +9,9 @@ You can build the project with following steps
 - Navigate to project root. */people-base/
 - Execute a maven build by 'mvn clean package' or 'mvn clean install'
 - Find the executable .jar at */people-base/target/
-- Alternately you can download the executable .jar file from *******
+
+## Test without installing
+- Alternately you can download the executable .jar file directly from *******
 
 ## Run
 - With the executable .jar made with the previous step, you can run the application by 'java -jar people-base-0.0.1-SNAPSHOT.jar' command.
@@ -28,8 +30,8 @@ You can build the project with following steps
     - user name: sa
     - password:
 
-## Test with command line client (curl)
-- You can can find sample basic curl commands collection to test this application below. 
+## Command line client (curl)
+- Below, you can can find sample basic curl command collection to test this application. 
 - Get all
 ```shell
  curl --user admin:admin localhost:8080/persons
