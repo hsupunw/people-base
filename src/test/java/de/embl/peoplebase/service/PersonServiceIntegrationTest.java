@@ -2,6 +2,7 @@ package de.embl.peoplebase.service;
 
 import de.embl.peoplebase.PersonTest;
 import de.embl.peoplebase.entity.Person;
+import de.embl.peoplebase.exception.MandatoryFieldException;
 import de.embl.peoplebase.exception.PersonNotFoundException;
 import de.embl.peoplebase.repository.PersonRepository;
 import org.junit.Before;
@@ -47,10 +48,14 @@ public class PersonServiceIntegrationTest extends PersonTest {
         assertPerson(randomPerson2, ((List<Person>) allPersonsReturned).get(1));
     }
 
-    @Test(expected = PersonNotFoundException.class)
-    public void getPerson() {
+    @Test
+    public void getPersonExist() {
         Person personReturned = personService.getPerson(randomPerson1.getId());
         assertPerson(randomPerson1, personReturned);
+    }
+
+    @Test(expected = PersonNotFoundException.class)
+    public void getPersonNotExist() {
         personService.getPerson(RANDOM_ID);
     }
 
@@ -63,14 +68,46 @@ public class PersonServiceIntegrationTest extends PersonTest {
         assertPerson(personReturned, personService.getPerson(personReturned.getId()));
     }
 
-    @Test(expected = PersonNotFoundException.class)
+    @Test(expected = MandatoryFieldException.class)
+    public void createPersonWithFirstNameNull() {
+        randomPerson3.setId(null);
+        randomPerson3.setFirstName(null);
+        personService.createPerson(randomPerson3);
+    }
+
+    @Test(expected = MandatoryFieldException.class)
+    public void createPersonWithFirstNameEmpty() {
+        randomPerson3.setId(null);
+        randomPerson3.setFirstName("");
+        personService.createPerson(randomPerson3);
+    }
+
+    @Test
     public void updatePerson() {
         randomPerson3.setId(null);
         Person personReturned = personService.updatePerson(randomPerson3, randomPerson1.getId());
         randomPerson3.setId(randomPerson1.getId());
         assertPerson(randomPerson3, personReturned);
         assertPerson(personReturned, personService.getPerson(randomPerson1.getId()));
+    }
+
+    @Test(expected = PersonNotFoundException.class)
+    public void updatePersonNotExist() {
         personService.getPerson(RANDOM_ID);
+    }
+
+    @Test(expected = MandatoryFieldException.class)
+    public void updatePersonFirstNameNull() {
+        randomPerson3.setId(null);
+        randomPerson3.setFirstName(null);
+        personService.updatePerson(randomPerson3, randomPerson1.getId());
+    }
+
+    @Test(expected = MandatoryFieldException.class)
+    public void updatePersonFirstNameEmpty() {
+        randomPerson3.setId(null);
+        randomPerson3.setFirstName("");
+        personService.updatePerson(randomPerson3, randomPerson1.getId());
     }
 
     @Test(expected = PersonNotFoundException.class)

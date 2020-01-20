@@ -1,7 +1,6 @@
 package de.embl.peoplebase.entity;
 
 import de.embl.peoplebase.converter.HobbyConverter;
-import de.embl.peoplebase.exception.MandatoryFieldException;
 import lombok.Data;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.envers.Audited;
@@ -30,11 +29,4 @@ public class Person {
     @Convert(converter = HobbyConverter.class)
     @Column(length = 3000)
     private Collection<String> hobby;
-
-    @PrePersist
-    public void validate() {
-        if (firstName == null || firstName.isEmpty()) {
-            throw new MandatoryFieldException("first name can't be empty");
-        }
-    }
 }
