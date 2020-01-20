@@ -95,3 +95,4 @@ command.
 ## Alternative Implementation with spring-data-rest
 - An alternative implementation with spring-data-rest and spring-data-jpa (fully working with above angular front end) can be found from https://github.com/hsupunw/people-base-data-rest
 - An alternative implementation with spring-data-rest and spring-data-mongodb (fully working with above angular front end) can be found from https://github.com/hsupunw/people-base-mongo
+- An alternative implementation with spring graphQL can be found from https://github.com/hsupunw/people-base-graphql
