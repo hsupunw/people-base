@@ -7,6 +7,9 @@
 - It additonally, provides related hateoas navigation links for each endpoint response with spring-hateoas.
 - Source code is covered by unit and integration tests powered with spring boot tests.
 
+## Prerequisite
+- java 8
+
 ## Build
 You can build the project with following steps
 - Navigate to project root. */people-base/
