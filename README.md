@@ -5,7 +5,7 @@
 - More over it is protected by basic authentication supported by spring-security.
 - All endpoints are documented with swagger 2.
 - It additonally, provides related hateoas navigation links for each endpoint response with spring-hateoas.
-- Source code is covered by unit and integration tests powered with spring boot tests.
+- Source code is covered by unit and integration tests powered with spring-boot and data-jpa tests.
 
 ## Prerequisite
 - java 8
